@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>日志配置</comment>
+<entry key="log4j.rootLogger">WARN, FILE, UI</entry>
+<entry key="log4j.appender.UI.layout.ConversionPattern">%d{HH:mm:ss,SSS} [%t] %-5p %C{1} : %m%n</entry>
+<entry key="log4j.appender.FILE.layout">org.apache.log4j.PatternLayout</entry>
+<entry key="log4j.appender.UI.Threshold">info</entry>
+<entry key="log4j.appender.UI">org.apache.log4j.WriterAppender</entry>
+<entry key="log4j.appender.FILE.DatePattern">.yyyy-MM-dd-HH-mm</entry>
+<entry key="log4j.appender.FILE">org.apache.log4j.DailyRollingFileAppender</entry>
+<entry key="log4j.appender.FILE.layout.ConversionPattern">%d{HH:mm:ss,SSS} [%t] %-5p %C{1} : %m%n</entry>
+<entry key="log4j.appender.UI.layout">org.apache.log4j.PatternLayout</entry>
+<entry key="log4j.appender.FILE.File">logs/extraction/log-per-minute.log</entry>
+</properties>
